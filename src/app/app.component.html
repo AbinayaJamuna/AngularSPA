@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 panelWidth">
+      <h4>Input Container</h4>
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <button type="button" class="btn btn-primary button" (click)="addInputField()">+</button>
+        <button type="Submit" class="btn btn-primary submit">Submit</button>
+        <div formArrayName="inputField">
+          <div class="row input-container" *ngFor="let input of inputField.controls; index as i" formGroupName="{{i}}">
+            <input class="form-control input" formControlName="input" placeholder="Enter Text">
+            <select class="form-select dropdown" formControlName="type">
+              <option value="Option 1">Option 1</option>
+              <option value="Option 2">Option 2</option>
+            </select>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-6 view-container">
+      <h4>View Container</h4>
+      <table class="table table-bordered table">
+        <tbody>
+          <tr *ngFor="let inp of result?.controls; index as number">
+            <td>{{inp.value.type}} </td>
+            <td>{{inp.value.input}} </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

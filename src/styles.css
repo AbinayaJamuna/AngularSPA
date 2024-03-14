@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+.panelWidth {
+    min-height: 800px;
+    border-color: grey;
+    border-style: solid;
+    border-width: 10px;
+    background-color: yellow;
+    padding: 20px;
+}
+
+.button {
+    background-color: lightgreen;
+    margin-top: 10px;
+}
+
+.submit {
+    background-color: lightgreen;
+    margin-top: 10px;
+    margin-left: 400px;
+}
+
+.table {
+    border-color: black;
+    margin-top: 65px;
+}
+
+.input {
+    background-color: skyblue;
+    width: 350px;
+}
+
+.dropdown {
+    background-color: skyblue;
+    margin-left: 100px;
+    width: 110px;
+}
+
+.input-container {
+    background-color: yellow;
+    margin-top: 15px;
+}
+
+.view-container {
+    min-height: 800px;
+    border-color: grey;
+    border-style: solid;
+    border-width: 10px;
+    background-color: orange;
+    padding: 20px;
+}
